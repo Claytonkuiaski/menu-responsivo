@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Menu Responsivo</title>
+
+	<script src="https://use.fontawesome.com/d9e304e597.js"></script><!-- Esse link é pra puxar o font-awesome direto da internet -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  <!-- Esse link é pra puxar o bootstrap direto da internet -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favi.ico"> <!-- imagem que vai na aba -->
+</head>
+<body>
+
+	<nav class="menu-responsivo">
+		<ul>
+			<li><a href="index.php">Parece</a></li>
+			<li><a href="sobre.php">que</a></li>
+			<li><a href="cardapio.php">miorô</a></li>
+			<li><a href="contato..php">agora</a></li>
+		</ul>		
+	</nav>
+
+	<div class="layout">
+
+		<header>
+			<div class="container">
+				<nav class="menu">
+					<ul>
+						<li><a href="index.php">Parece</a></li>
+						<li><a href="sobre.php">que</a></li>
+						<li><a href="cardapio.php">miorô</a></li>
+						<li><a href="contato..php">agora</a></li>
+					</ul>		
+				</nav>
+				<div class="toggle">
+					<a href="#"><i class="fa fa-bars"></i></a>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="container">
+				<div class="row row-1">
+					<div class="col-md-4">
+						<img src="img/foto.jpg" alt="" class="img-responsive">
+						<h3>texto</h3>
+					</div>
+					<div class="col-md-4">
+						<img src="img/foto.jpg" alt="" class="img-responsive">
+						<h3>texto</h3>
+					</div>
+					<div class="col-md-4">
+						<img src="img/foto.jpg" alt="" class="img-responsive">
+						<h3>texto</h3>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/foto.jpg" alt="" class="img-responsive">
+						<h3>texto</h3>
+					</div>
+					<div class="col-md-4">
+						<img src="img/foto.jpg" alt="" class="img-responsive">
+						<h3>texto</h3>
+					</div>
+					<div class="col-md-4">
+						<img src="img/foto.jpg" alt="" class="img-responsive">
+						<h3>texto</h3>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h5>&copy TODOS OS DIREITOS RESERVADOS - 2017</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+
+<script  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+</script>
+<script>
+	      $(function(){       
+        $('.toggle').click(function(){
+          $('.layout').toggleClass('ativo');
+          $('.menu-responsivo').toggleClass('ativo');
+          $(this).toggleClass('ativo');
+        });
+        new WOW().init();
+      });
+</script>	<!-- Esse código que vai fazer o "click" do toggle funcionar, juntamente com o link do Jquery que está logo acima-->
+</body>
+</html>
